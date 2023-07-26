@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Fruit Burst</title>
   <!-- fontawesome link -->
   <script src="https://kit.fontawesome.com/430414932c.js" crossorigin="anonymous"></script>
   <!-- DaisyUi and tailwind css link -->
@@ -36,7 +36,7 @@
 
 </head>
 
-<body class="font-lato">
+<body class="font-lato overflow-x-hidden">
   <header class="max-w-screen-xl mx-auto px-3 md:px-8 lg:px-5">
     <div
       class="navbar w-full lg:bg-primary_color rounded-full py-1 lg:my-6 my-2 justify-between lg:flex-row flex-row-reverse">
@@ -246,20 +246,29 @@
               <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
               <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
             </div>
+            <h3 class="text-base font-bold text-primary_color"></h3>
 
             <!-- Open the modal using ID.showModal() method -->
-            <button class="btn" onclick="my_modal_2.showModal()">
-              <h3 class="text-base font-bold text-primary_color">Details</h3>
-            </button>
-            <dialog id="my_modal_2" class="modal">
+            <button class=" text-base font-bold text-primary_color " onclick="my_modal_1.showModal()">Details</button>
+            <dialog id="my_modal_1" class="modal">
               <form method="dialog" class="modal-box">
-                <h3 class="font-bold text-lg">Hello!</h3>
-                <p class="py-4">Press ESC key or click outside to close</p>
-              </form>
-              <form method="dialog" class="modal-backdrop">
-                <button>close</button>
+                <div class=" text-center px-8 py-5">
+                  <img class="w-5/12 mx-auto" src="images/fruit6.png" alt="">
+                  <h1 class="text-2xl font-bold text-[#121212] my-6">Apples</h1>
+                  <p>Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                  <div class="rating my-5">
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" checked />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                  </div><br>
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="mr-3 bg-white hover:bg-primary_color border border-primary_color rounded text-primary_color hover:text-white py-2 px-5  ">Close</button><button class=" bg-primary_color hover:bg-white border border-primary_color rounded text-white hover:text-primary_color  py-2 px-5">Buy Now</button>
+                </div>
               </form>
             </dialog>
+
           </div>
 
           <!-- card2 -->
@@ -273,8 +282,27 @@
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary_color" />
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary_color" />
               <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary_color" />
-            </div>
-            <h3 class="text-base font-bold text-primary_color">Details</h3>
+            </div> <br>
+            <button class=" text-base font-bold text-primary_color " onclick="my_modal_2.showModal()">Details</button>
+            <dialog id="my_modal_2" class="modal">
+              <form method="dialog" class="modal-box">
+                <div class=" text-center px-8 py-5">
+                  <img class="w-5/12 mx-auto" src="images/fruit7.png" alt="">
+                  <h1 class="text-2xl font-bold text-[#121212] my-6">Orange</h1>
+                  <p>Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                  <div class="rating my-5 block">
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" checked />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                  </div>
+
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="mr-3 bg-white hover:bg-primary_color border border-primary_color rounded text-primary_color hover:text-white py-2 px-5  ">Close</button><button class=" bg-primary_color hover:bg-white border border-primary_color rounded text-white hover:text-primary_color  py-2 px-5">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
           </div>
 
           <!-- card3 -->
@@ -288,8 +316,26 @@
               <input type="radio" name="rating-3" class="mask mask-star-2 bg-primary_color" />
               <input type="radio" name="rating-3" class="mask mask-star-2 bg-primary_color" />
               <input type="radio" name="rating-3" class="mask mask-star-2 bg-primary_color" />
-            </div>
-            <h3 class="text-base font-bold text-primary_color">Details</h3>
+            </div><br>
+            <button class=" text-base font-bold text-primary_color " onclick="my_modal_3.showModal()">Details</button>
+            <dialog id="my_modal_3" class="modal">
+              <form method="dialog" class="modal-box">
+                <div class=" text-center px-8 py-5">
+                  <img class="w-5/12 mx-auto" src="images/fruit8.png" alt="">
+                  <h1 class="text-2xl font-bold text-[#121212] my-6">Red Dragon</h1>
+                  <p>Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                  <div class="rating my-5">
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" checked />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                  </div><br>
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="mr-3 bg-white hover:bg-primary_color border border-primary_color rounded text-primary_color hover:text-white py-2 px-5  ">Close</button><button class=" bg-primary_color hover:bg-white border border-primary_color rounded text-white hover:text-primary_color  py-2 px-5">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
           </div>
 
           <!-- card4 -->
@@ -303,8 +349,26 @@
               <input type="radio" name="rating-4" class="mask mask-star-2 bg-primary_color" />
               <input type="radio" name="rating-4" class="mask mask-star-2 bg-primary_color" />
               <input type="radio" name="rating-4" class="mask mask-star-2 bg-primary_color" />
-            </div>
-            <h3 class="text-base font-bold text-primary_color">Details</h3>
+            </div><br>
+            <button class=" text-base font-bold text-primary_color " onclick="my_modal_4.showModal()">Details</button>
+            <dialog id="my_modal_4" class="modal">
+              <form method="dialog" class="modal-box">
+                <div class=" text-center px-8 py-5">
+                  <img class="w-5/12 mx-auto" src="images/fruit9.png" alt="">
+                  <h1 class="text-2xl font-bold text-[#121212] my-6">Banana</h1>
+                  <p>Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                  <div class="rating my-5">
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" checked />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                    <input type="radio" name="rating-1" class="mask mask-star-2 bg-primary_color" />
+                  </div><br>
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="mr-3 bg-white hover:bg-primary_color border border-primary_color rounded text-primary_color hover:text-white py-2 px-5  ">Close</button><button class=" bg-primary_color hover:bg-white border border-primary_color rounded text-white hover:text-primary_color  py-2 px-5">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
           </div>
 
         </div>
@@ -316,9 +380,9 @@
     </section>
 
     <!-- teame section -->
-    <section class=" lg:px-52 md:px-16 px-5  lg:py-24 md:py-8 py-6 relative mb-10 -z-20 "
+    <section class=" rounded-md  lg:px-52 md:px-16 px-5  lg:py-24 md:py-8 py-6 relative mb-10 -z-20 "
       style=" background-image: url('images/team.png'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
-      <div class="absolute left-0 top-0 h-full w-full bg-black opacity-50 -z-10"></div>
+      <div class="absolute left-0 top-0 h-full w-full bg-black opacity-50 rounded-md -z-10"></div>
       <div class=" text-center mb-8 z-30 ">
         <h1 class="text-4xl font-bold text-white mb-4">Meet the team section</h1>
         <p class="text-base font-medium text-white">Contrary to popular belief, is not simply random text. It has roots
@@ -398,7 +462,7 @@
 
       <div class="grid grid-cols-1  lg:grid-cols-3 gap-7">
         <div class="block lg:hidden">
-          <img src="images/whychoose1.png" alt="">
+          <img class="mx-auto" src="images/whychoose1.png" alt="">
         </div>
         <div>
           <!-- icon box 1 -->
@@ -510,7 +574,7 @@
 
   </main>
 
-  <footer class="bg-[#121212] flex items-center flex-col py-24">
+  <footer class="bg-[#121212] flex items-center flex-col py-20">
     <div class="flex gap-3 items-center my-7">
       <img class="w-2/12" src="images/logo.png" alt="">
       <h1 class="text-white text-4xl font-medium">Fruit Burst</h1>
