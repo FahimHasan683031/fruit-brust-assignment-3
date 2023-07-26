@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/430414932c.js" crossorigin="anonymous"></script>
+    <!-- DaisyUi and tailwind css link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                primary_color: '#F85559',
+                
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+
+<body>
+    <header class="max-w-screen-xl mx-auto px-3 md:px-8 lg:px-5">
+        <div class="navbar w-full lg:bg-primary_color rounded-full py-1 lg:my-10 my-2 justify-between lg:flex-row flex-row-reverse">
+
+           
+            <div class="navbar-center hidden flex-none lg:flex-1 lg:flex">
+              <ul class="menu menu-horizontal px-1 text-base font-normal gap-5 hover:cursor-pointer ml-4 text-white ">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Shop</li>
+                <li>All Fruits</li>
+              </ul>
+            </div>
+
+            
+                <div class="dropdown flex-1 lg:flex-none text-right ">
+                  <label tabindex="0" class="btn btn-ghost  lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  </label>
+
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                  </ul>
+                </div>
+
+            <div class=" flex flex-1 gap-2 lg:justify-center justify-start">
+                <img class=" w-2/12 md:w-1/12" src="images/logo.png" alt="">
+                <h4 class=" md:text-3xl text-2xl font-semibold text-black lg:text-white">Fruit Burst</h4>
+            </div>
+              
+
+            <div class=" hidden lg:flex-auto  lg:block text-right  mr-4">
+              <span class="bg-white py-2 px-4 rounded-full  ">
+              <input class=" " type="search" placeholder="Search here" name="" id=""  >
+              <i class="fa-solid fa-magnifying-glass "></i>
+            </span>
+            </div>
+          </div>
+    </header>
+    <main class="max-w-screen-xl mx-auto px-7 md:px-8 lg:px-5">
+
+    </main>
+    <footer></footer>
+</body>
+
+</html>
